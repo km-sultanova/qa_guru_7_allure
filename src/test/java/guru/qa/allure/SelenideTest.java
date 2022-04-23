@@ -1,5 +1,7 @@
 package guru.qa.allure;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.withText;
@@ -12,14 +14,15 @@ public class SelenideTest {
 
     @Test
     void testGithubIssue(){
+        SelenideLogger.addListener("allure", new AllureSelenide());
         //km-sultanova/qa_guru_7_allure
         open("https://github.com");
         $(".header-search-input").click();
-        $(".header-search-input").sendKeys("eroshenkoam/allure-example");
+        $(".header-search-input").sendKeys("km-sultanova/qa_guru_7_allure");
         $(".header-search-input").submit();
 
-        $(linkText("eroshenkoam/allure-example")).click();
+        $(linkText("1km-sultanova/qa_guru_7_allure")).click();
         $(partialLinkText("Issues")).click();
-        $(withText("76")).click();
+        $(withText("2")).click();
     }
 }
