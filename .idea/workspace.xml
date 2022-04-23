@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f60cc64-80a6-431d-a165-05a167c152be" name="Changes" comment="add new tests">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+    <list default="true" id="2f60cc64-80a6-431d-a165-05a167c152be" name="Changes" comment="some updates">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/guru/qa/allure/SelenideTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/guru/qa/allure/SelenideTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/guru.qa.allure.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/guru.qa.allure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/qa/allure/AnnotatedStepTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/qa/allure/AnnotatedStepTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/qa/allure/LabelsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/qa/allure/LabelsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/qa/allure/LambdaStepTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/qa/allure/LambdaStepTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/qa/allure/SelenideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/qa/allure/SelenideTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650714142758</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="some updates">
+      <created>1650715684865</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650715684865</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,6 +286,7 @@
     <MESSAGE value="add unversioned files" />
     <MESSAGE value="create SelenideTest" />
     <MESSAGE value="add new tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new tests" />
+    <MESSAGE value="some updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="some updates" />
   </component>
 </project>
