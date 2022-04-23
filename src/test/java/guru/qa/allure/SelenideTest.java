@@ -1,7 +1,11 @@
 package guru.qa.allure;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Story;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.withText;
@@ -13,6 +17,10 @@ import static org.openqa.selenium.By.partialLinkText;
 public class SelenideTest {
 
     @Test
+    @Owner("Karina")
+    @DisplayName("Selenide Step Test")
+    @Feature("Github repository issues")
+    @Story("View created tasks")
     void testGithubIssue(){
         SelenideLogger.addListener("allure", new AllureSelenide());
         //km-sultanova/qa_guru_7_allure

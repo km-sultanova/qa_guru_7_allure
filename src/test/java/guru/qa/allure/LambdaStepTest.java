@@ -2,8 +2,9 @@ package guru.qa.allure;
 
 import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.Allure;
+import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.nio.charset.StandardCharsets;
@@ -21,6 +22,10 @@ public class LambdaStepTest {
     private static final int ISSUE_NUMBER = 2;
 
     @Test
+    @Owner("Karina")
+    @DisplayName("Lambda Step test")
+    @Feature("Github repository issues")
+    @Story("View created tasks")
     void testGithubIssue(){
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Open main page", () -> {
