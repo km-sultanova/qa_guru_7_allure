@@ -39,7 +39,8 @@ public class WebSteps {
 
     @Step("Check if Issue number {number} exists")
     public void shouldSeeIssueWithNumber(int number){
-        $(withText("#3" + number)).click();
+        $(withText("#" + number)).click();
+        attachScreenshot();
     }
 
     @Attachment(value = "My favorite screenshot", type = "image/png", fileExtension = "png")

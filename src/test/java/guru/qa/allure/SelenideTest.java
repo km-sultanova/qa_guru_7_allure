@@ -8,6 +8,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -23,14 +24,13 @@ public class SelenideTest {
     @Story("View created tasks")
     void testGithubIssue(){
         SelenideLogger.addListener("allure", new AllureSelenide());
-        //km-sultanova/qa_guru_7_allure
         open("https://github.com");
         $(".header-search-input").click();
         $(".header-search-input").sendKeys("km-sultanova/qa_guru_7_allure");
         $(".header-search-input").submit();
 
-        $(linkText("1km-sultanova/qa_guru_7_allure")).click();
+        $(linkText("km-sultanova/qa_guru_7_allure")).click();
         $(partialLinkText("Issues")).click();
-        $(withText("2")).click();
+        $(".opened-by").shouldHave(text("2"));
     }
 }

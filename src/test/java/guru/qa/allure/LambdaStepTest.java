@@ -1,5 +1,6 @@
 package guru.qa.allure;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.*;
@@ -9,6 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import java.nio.charset.StandardCharsets;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -43,7 +45,9 @@ public class LambdaStepTest {
             $(partialLinkText("Issues")).click();
         });
         step("Check if Issue number " + ISSUE_NUMBER + " exists", ()->{
-            $(withText("#" + ISSUE_NUMBER)).click();
+            //$(withText("#" + ISSUE_NUMBER)).click();
+            $("#issue_" + ISSUE_NUMBER + "_link").click();
+            $(".f1-light.color-fg-muted").shouldHave(text("#" + ISSUE_NUMBER));
             Allure.getLifecycle().addAttachment(
                     "Исходники страницы",
                     "text/html",
